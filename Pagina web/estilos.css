@@ -37,3 +37,69 @@ nav a {
 #sesion {
     width: 4vw;
 }
+
+/*              REGISTER                 */
+
+/*Movil*/
+
+@media screen and (min-width: 0px) and (max-width: 760px) {
+    .registerasideimg {
+        display: none;
+    }
+
+    .registeraside {
+        width: 0;
+        height: 0;
+        float: none;
+        display: none;
+        object-fit: none;
+        position: relative;
+    }
+
+    .registersection {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #registerh1section {
+        padding-top: 3%;
+    }
+
+}
+
+/*Ordinador*/
+
+@media screen and (min-width: 761px) {
+
+    .registeraside {
+        width: 50%;
+        height: 100%;
+        float: left;
+        display: flex;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .registerasideimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .registersection {
+        text-align: center;
+        margin-left: 50%;
+    }
+
+    .registersection {
+        text-align: center;
+        margin-left: 50%;
+    }
+
+    #registerh1section {
+        padding-top: 3%;
+    }
+
+}
