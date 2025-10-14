@@ -2,10 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Registre</title>
     <link type="text/css" rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <header>
+        <a href="index.html"><img src="Imagenes/logo.png">
+            <h1>Sports Hub</h1>
+        </a>
+    </header>
+    <nav>
+        <a>Home</a>
+        <a href="ZapatillasRunningKIPRUNKS500.2Mujer-GrisyCoral.html">Dona</a>
+        <a>Nen</a>
+        <a>Unisex</a>
+        <a href="cesta.html"><img id="cesta" src="Imagenes/cesta.png"></a>
+        <a href="index.html"><img id="sesion" src="Imagenes/inicio_sesion.png"></a>
+    </nav>
     <aside>
         <div class="registeraside">
         <img class="registerasideimg" src="Imagenes/Register.png" alt="">
@@ -13,8 +26,12 @@
     </aside>
     <section class="registersection">
         <h1 id="registerh1section"> Crea el teu compte </h1>
-        <form>
-            <input type="text">
+        <form class="registerformsection">
+            <input class="registerformsectioninput" type="text" id="formnom" name="nom" value="" placeholder="Nom"> <br>
+            <input class="registerformsectioninput" type="text" id="forcognom" name="cognom" value="" placeholder="Cognom"> <br>
+            <input class="registerformsectioninput" type="text" id="foradreça" name="adreça" value="" placeholder="Adreça"> <br>
+            <input class="registerformsectioninput" type="text" id="fortelefon" name="telefon" value="" placeholder="Telèfon"> <br>
+            <button class="registerformsectionbutton" type="submit"> CONTINUAR </button>
         </form>
     </section>
 </body>
