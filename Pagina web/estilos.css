@@ -1,105 +1,93 @@
-body {
-    font-family: Arial;
-}
-
 header {
+    background-color: red;
     font-size: 2vw;
-    margin-right: 6%;
+    margin-right: 2%;
     height: 8%;
-    width: 40%;
-    float: left;
  }
 header img {
-    width: 12vw;
+    height: 90%;
+    width: 8%;
     float: left;
 }
 header a {
     text-decoration: none;
-    width: 30%;
-    color: darkblue;
+    color: black;
 }
 
 /*menu*/
 nav {
-    display: flex;
     flex-direction: row;
-    padding-top: 3%;
+    font-size: 1.5vw;
+    width: 40%;
+    padding-left: 5%;
 }
-nav a {
-    text-decoration: none;
-    color: darkblue;
-    font-size: 3vw;
-    margin-left: 4%;
-}
-#cesta {
-    width: 6vw;
-}
-#sesion {
-    width: 4vw;
+.opciones {
+    display: flex;
 }
 
-/*              REGISTER                 */
-
-/*Movil*/
-
-@media screen and (min-width: 0px) and (max-width: 760px) {
-    .registerasideimg {
-        display: none;
-    }
-
-    .registeraside {
-        width: 0;
-        height: 0;
-        float: none;
-        display: none;
-        object-fit: none;
-        position: relative;
-    }
-
-    .registersection {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    #registerh1section {
-        padding-top: 3%;
-    }
-
+input[type="radio"] {
+    display: none;
 }
 
-/*Ordinador*/
-
-@media screen and (min-width: 761px) {
-
-    .registeraside {
-        width: 50%;
-        height: 100%;
-        float: left;
-        display: flex;
-        object-fit: cover;
-        position: absolute;
-    }
-
-    .registerasideimg {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .registersection {
-        text-align: center;
-        margin-left: 50%;
-    }
-
-    .registersection {
-        text-align: center;
-        margin-left: 50%;
-    }
-
-    #registerh1section {
-        padding-top: 3%;
-    }
-
+.opcion-label {
+    display: block;
+    padding: 15px;
+    border: 1px solid black;
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
 }
+.opcion-label:hover {
+    background-color: #007BFF;
+    border-color: #007BFF;
+    color: white;
+}
+
+/* Estilo cuando está seleccionado */
+input[type="radio"]:checked + .opcion-label {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+}
+
+input[type="radio"]:focus + .opcion-label {
+    outline: 2px solid #007BFF;
+}
+/*Cesta*/
+#cesta div{
+    width: 70vw;
+    display: inline-block;
+}
+#cesta #productos .producto{
+    border: 1px solid black;
+}
+#cesta #productos div{
+    margin-bottom: 1vw;
+    display: flex;
+}
+#cesta #productos div img{
+    width: 10vw;
+}
+#cesta #productos .producto button img{
+    width: 100%;
+}
+#cesta #productos .producto button{
+    float: right;
+    height: 30px;
+    width: 30px;
+}
+#precios{
+    padding-left: 3vw;
+    display: inline-block;
+}
+#cesta{
+    display: flex;
+}
+#cesta #productos .producto p {
+    padding-top: 95%;
+}
+#cesta #productos .producto .textoproducto{
+    width: 400vw;
+padding-left: 18%;
+}
+
